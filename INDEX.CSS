@@ -1,0 +1,107 @@
+body{
+    margin: 0px;
+}
+h1,h2,h3,h4{
+    color: #fff;
+}
+p, a{
+    color: #fff;
+}
+.container{
+    display: grid;
+}
+.text-container{
+    display: grid; 
+    grid-template-areas: 
+    "text-1"
+    "text-2"
+    "actors"
+    "movie-name"
+    "info";
+}
+img{
+    position: absolute;
+    width: 100%;
+    min-height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+.text-1 > h2{
+    text-align: center;
+    color: #000;
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: 200;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+.text-2 > h3{
+    text-align: center;
+    color: #000;
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-size: 15px;
+}
+.actors{
+    display: flex;
+    padding-top: 1035px;
+    justify-content: center;
+    column-gap: 200px;
+}
+.actor1 > h2 > a{
+    text-decoration: none;
+    letter-spacing: 15px;
+    color: rgb(66, 69, 112);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+}
+.actor1 > h2 > a:hover{
+    cursor: grab;
+    transition: 1s;
+    color: rgb(48, 74, 94);
+    
+}
+.actor2 > h2 > a{
+    text-decoration: none;
+    letter-spacing: 15px;
+    color: rgb(70, 85, 100);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+}
+.actor2 > h2 > a:hover{
+    cursor: grab;
+    transition: 1s;
+    color: #fff;
+}
+.movie-name{
+    display: grid;
+}
+.movie-name .first > h1 > a:hover{
+    color: 5584AC;
+    cursor: grab;
+    transition: 1s;
+}
+.movie-name .first > h1{
+    text-align: center;
+}
+.movie-name .first > h1 > a{
+    text-decoration: none;
+    text-align: center;
+    color: #93d8fd;
+    font-size: 55px;
+    letter-spacing: 5px;
+    font-family:' Pasajero', sans-serif;
+    padding-bottom: 100px;
+}
+
+.info{
+    display: grid;
+    margin-top: 75px;
+}
+.line1 > p{
+    text-align: center;
+    color: #4f4745;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin: 0px;
+}
